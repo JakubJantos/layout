@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galaxy layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* overflow-x: hidden; */
+            /* box-sizing: border-box; */
+            font-size: 1.2em;
+            font-family: sans-serif, arial;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .header {
+
+            background-color: #a155ff;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .content {
+            background-color: #fff;
+            width: 100%;
+
+        }
+
+        .bar {
+            position: relative;
+            background-color: gray;
+            width: 100%;
+            height: 60vh;
+            margin-top: 2px;
+
+        }
+
+        .header>img {
+
+            height: 90%;
+            margin: 5px calc(50% - 100px)
+        }
+
+        .item {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            max-height: 90%;
+            max-width: 40%;
+            padding: 20px;
+            float: left;
+        }
+
+        #a5 {
+            position: relative;
+            float: left;
+            margin: 0 10%;
+        }
+
+        #a6 {
+            position: relative;
+            float: left;
+            margin: 0 5%;
+        }
+
+        .bar:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #opis1 {
+            position: absolute;
+            padding: 20px;
+        }
+
+        #opis1>span {
+            font-weight: bold;
+
+        }
+
+        #opis2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul {
+            margin-left: 50%;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="/src/GALAXY_RGB.png" alt="logo galaxy">
+    </div>
+
+    <div class="content">
+        <div class="bar">
+            <p id="opis1">
+                <span>Hilton – lampa wisząca TK Lighting.</span>
+                <br><br>
+                Marzy Ci się ekskluzywne oświetlenie do domu? Chciałbyś zainwestować w wysokiej jakości klasyczną lampę
+                wiszącą od TK Lighting? Zachęcamy do zapoznania się z całą naszą ofertą!
+                Wierzymy, że ponadczasowe akcesoria oświetleniowe, takie jak np. lampa Hilton 1PŁ, to świetny wybór do
+                różnych aranżacji wnętrz. Dodatkowo nowoczesna lampa wisząca Hilton to
+                gwarancja solidnego wykonania, które idzie w parze z nietuzinkowym designem. Model ten łączy w sobie
+                szlachetne kolory – matową czerń oraz stare złoto, charakteryzuje się
+                klasycznymi kształtami, a dodatkowo wykonany jest z wysokiej jakości materiałów. Postaw na swoją lampę
+                wiszącą TK Lighting Hilton już dziś. Zapraszamy do zakupów!
+
+            </p>
+        </div>
+        <div class="bar clearfix">
+            <img class="item " src="/src/1.jpg">
+            <div>
+                <p id="opis2">
+
+                    <ul>
+                        <lh>Parametry</lh>
+                        <li>Producent: TK Lighting</li>
+                        <li>Styl: nowoczesny</li>
+                        <li>Wysokość: 1300mm</li>
+                        <li>Szerokość: 500mm</li>
+                        <li>Długość: 500mm</li>
+                        <li>Regulacja wysokości: tak</li>
+                        <li>Ilość żarówek / Gwint / Moc: 1xE27 max 60W</li>
+                        <li>Żarówki w komplecie: tak</li>
+                        <li>Materiał stelaża: metal</li>
+                        <li>Kolor stelaża: czarny</li>
+                        <li>Materiał klosza / abażura: tkanina</li>
+                        <li>Kolor klosza / abażura: czarno-złoty</li>
+
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+        <div class="bar">
+            <img class="item" src="/src/2.jpg">
+        </div>
+        <div class="bar">
+            <img class="item" src="/src/3.jpg">
+        </div>
+        <div class="bar">
+            <img class="item" src="/src/4.jpg">
+        </div>
+        <div class="bar">
+            <img class="item" id="a5" src="/src/5.jpg">
+            <img class="item" id="a6" src="/src/6.jpg">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
