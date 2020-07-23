@@ -26,6 +26,12 @@
             height: 20vh;
         }
 
+        .header_bar {
+            background-color: #712fc2;
+            width: 100%;
+            height: 5vh;
+        }
+
         .content {
             background-color: #fff;
             width: 100%;
@@ -34,7 +40,7 @@
 
         .bar {
             position: relative;
-            background-color: gray;
+            background-color: #fff;
             width: 100%;
             height: 60vh;
             margin-top: 2px;
@@ -76,9 +82,23 @@
             justify-content: center;
         }
 
+        ul {
+            margin-left: 50%;
+            border-left: 2px solid #712fc2;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        p {
+            padding: 20px;
+        }
+
         #opis1 {
             position: absolute;
             padding: 20px;
+
         }
 
         #opis1>span {
@@ -90,14 +110,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
         }
 
-        ul {
+        #opis3 {
+            /* float: left; */
             margin-left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.5em;
         }
 
-        .clearfix {
-            overflow: auto;
+        #opis4 {
+            float: left;
+            margin-left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 2px solid #712fc2;
+
+        }
+
+        #opis5 {
+            /* float: left; */
+            margin-left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left: 2px solid #712fc2;
         }
     </style>
 </head>
@@ -105,6 +146,9 @@
 <body>
     <div class="header">
         <img src="/src/GALAXY_RGB.png" alt="logo galaxy">
+    </div>
+    <div class="header_bar">
+
     </div>
 
     <div class="content">
@@ -148,14 +192,61 @@
             </div>
 
         </div>
-        <div class="bar">
+        <div class="bar"><br>
             <img class="item" src="/src/2.jpg">
+            <p id="opis3">
+                <ul>
+                    <lh>CECHY / SPECYFIKACJA</lh>
+                    <li>SZEROKOŚĆ: Ø60 mm</li>
+                    <li>WYSOKOŚĆ: 109 mm</li>
+                    <li>MOC: 10W</li>
+                    <li>BARWA ŚWIATŁA: NEUTRALANA - 4500K</li>
+                    <li>ŹRÓDŁO ŚWIATŁA: TAK</li>
+                    <li>Strumień Światła: 800 lm</li>
+                    <li>NAPIĘCIE: ~230V/ 50Hz</li>
+                    <li>KĄT ŚWIECENIA: 240°</li>
+                    <li>KOLOR OBUDOWY: Biały</li>
+                    <li>GWINT: E27</li>
+                    <li>CZUJNIK RUCHU: NIE</li>
+
+            </p>
         </div>
         <div class="bar">
             <img class="item" src="/src/3.jpg">
+            <p id="opis4">
+                Kolekcja lamp HILTON zaprojektowana przez firmę TK Lighting to bardzo ciekawa propozycja.
+
+                Cechą charakterystyczną rodziny jest połączenie dwóch wyrazistych barw, a mianowicie czerni ze złotem.
+                Jest to nie tylko dwukolorowy abażur, ale specjalna konstrukcja w postaci połączenia dwóch abażurów z
+                centymetrową przerwą pomiędzy nimi.
+                Przerwa ta jest elementem dekoracyjnym w ciągu dnia, ale prawdziwy efekt pojawia się dopiero po
+                zapaleniu światła, które to delikatnie przenika przez otwór,
+                tworząc świetlną obręcz na suficie bądź ścianach. Ogromnym atutem lamp jest abażur, który w środku
+                podklejony jest folią w kolorze złotym, która odbija dodatkowo
+                światło od środka uwalniając je przez szczelinę.
+
+            </p>
         </div>
         <div class="bar">
             <img class="item" src="/src/4.jpg">
+            <p id="opis5">
+                Kolekcja lamp HILTON zaprojektowana przez firmę TK Lighting to bardzo ciekawa propozycja.
+                Cechą charakterystyczną rodziny jest połączenie dwóch wyrazistych barw, a mianowicie czerni ze złotem.
+                Jest to nie tylko dwukolorowy abażur, ale specjalna konstrukcja w postaci połączenia dwóch abażurów z
+                centymetrową przerwą pomiędzy nimi.
+                Przerwa ta jest elementem dekoracyjnym w ciągu dnia, ale prawdziwy efekt pojawia się dopiero po
+                zapaleniu światła, które to delikatnie przenika przez otwór,
+                tworząc świetlną obręcz na suficie bądź ścianach. Ogromnym atutem lamp jest abażur, który w środku
+                podklejony jest folią w kolorze złotym,
+                która odbija dodatkowo światło od środka uwalniając je przez szczelinę.
+                Lampa wisząca pojedyncza (4346) to przede wszystkim ogromy abażur o średnicy 50 cm zawieszony na
+                przewodzie.
+                Maksymalna długość lampy to 130cm, co jest optymalną wysokością np. nad stolikiem, ale nic nie stoi na
+                przeszkodzie aby lampę skrócić i umieścić większa ilość
+                w większym pomieszczeniu.
+
+
+            </p>
         </div>
         <div class="bar">
             <img class="item" id="a5" src="/src/5.jpg">
